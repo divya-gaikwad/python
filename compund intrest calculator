@@ -1,0 +1,9 @@
+principle=0
+rate=0
+time=0
+while principle<=0:
+  principle=float(input("enter the principle amount : ))
+  if principle <=0:
+    print("principle can't be less than eqal to zero)
+
+print(principle)
