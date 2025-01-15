@@ -1,0 +1,33 @@
+#A Quiz Game in Python
+print('Welcome to Python Quiz')
+answer=input('Are you ready to play the Quiz ? (yes/no) :')
+score=0
+total_questions=3
+ 
+if answer.lower()=='yes':
+    answer=input('Question 1: Python is interpreted ?(yes/no)')
+    if answer.lower()=='yes':
+        score += 1
+        print('correct')
+    else:
+        print('Wrong Answer :(')
+ 
+ 
+    answer=input('Question 2: What is used to define a block of code in Python language?')
+    if answer.lower()=='indentation':
+        score += 1
+        print('correct')
+    else:
+        print('Wrong Answer :(')
+ 
+    answer=input('Question 3: Who developed python programming language ?')
+    if answer.lower()=='guido van rossom':
+        score += 1
+        print('correct')
+    else:
+        print('Wrong Answer :(')
+ 
+print('Thankyou for Playing this small quiz game, you attempted',score,"questions correctly!")
+mark=(score/total_questions)*100
+print('Marks obtained:',mark)
+print('BYE!')
