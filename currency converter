@@ -1,0 +1,23 @@
+#Programs to convert U.S. dollars to Indian rupees.
+def dol_rup():
+    dollars = float(input("Please enter dollars:"))
+    rupees = dollars * 70
+    print(f"Dollars: {dollars} $")
+    print(f"Rupees: {rupees} Rs") 
+def euro_rup():
+    euro= float(input("Please enter euro:"))
+    rupees = euro * 79.30 
+    print(f"Euro: {euro} EUR")
+    print(f"Rupees: {rupees} Rs") 
+def menu():
+    print("1: Doller to Rupees")
+    print("2: Euro to Rupees")
+    print("3: Exit")
+    choice=int(input("Enter your choice: "))
+    if choice==1:
+        dol_rup()
+    if choice==2:
+        euro_rup()
+    if choice==3:
+        print("Good bye!") 
+menu()
