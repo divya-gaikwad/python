@@ -1,0 +1,15 @@
+#Creates a random short story using predefined words.
+
+import random
+
+characters = ["Alice", "Bob", "Charlie", "David"]
+places = ["forest", "castle", "beach", "space station"]
+actions = ["found a treasure", "met a talking cat", "discovered a secret door", "built a robot"]
+
+def generate_story():
+    character = random.choice(characters)
+    place = random.choice(places)
+    action = random.choice(actions)
+    return f"{character} went to the {place} and {action}!"
+
+print(generate_story())
