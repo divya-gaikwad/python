@@ -1,0 +1,8 @@
+#Make text disappear and reappear like magic!
+
+import time
+
+text = "🔮 This message will disappear..."
+print(text, end="", flush=True)
+time.sleep(3)  # Wait for 3 seconds
+print("\r" + " " * len(text), end="", flush=True)  # Erase text
